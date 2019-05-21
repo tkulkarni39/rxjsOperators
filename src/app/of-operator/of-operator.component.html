@@ -1,0 +1,7 @@
+<div>
+  <button (click)="buttonClick$.next()">Click Me</button>
+
+  <button (click)="toggle = !toggle">Toggle</button>
+  <div *ngIf="toggle">{{clicks | async}}</div>
+
+</div>
